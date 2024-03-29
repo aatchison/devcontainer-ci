@@ -8,5 +8,8 @@
       "ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {}
     },
     "workspaceFolder": "/home/vscode/devcontainer-ci",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/devcontainer-ci,type=bind"
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/devcontainer-ci,type=bind",
+    "hostRequirements": {
+      "cpus": 4
+    }
 }
