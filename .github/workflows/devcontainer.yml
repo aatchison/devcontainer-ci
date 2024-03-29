@@ -17,5 +17,5 @@ jobs:
           imageName: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
           cacheFrom: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
           push: always
-          runCmd: test.sh
+          runCmd: ./test.sh
         
