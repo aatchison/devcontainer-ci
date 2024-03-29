@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/example/example-devcontainer
-          cacheFrom: ghcr.io/example/example-devcontainer
+          # imageName: ghcr.io/example/example-devcontainer
+          # cacheFrom: ghcr.io/example/example-devcontainer
           push: always
