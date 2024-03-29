@@ -5,5 +5,7 @@
       "ghcr.io/devcontainers-contrib/features/kind:1": {},
       "ghcr.io/rio/features/vcluster:1": {},
       "ghcr.io/aatchison/features/idpbuilder:2": {}
-    }
+    },
+    "workspaceFolder": "/home/vscode/devcontainer-ci",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/devcontainer-ci,type=bind"
 }
