@@ -1,0 +1,12 @@
+name: devcontainer-ci-test
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  ci-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/example/example-devcontainer
+          cacheFrom: ghcr.io/example/example-devcontainer
+          push: always
