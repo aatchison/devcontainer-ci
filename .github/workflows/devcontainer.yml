@@ -10,6 +10,6 @@ jobs:
       - uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/aatchison/features/idpbuilder
-          cacheFrom: ghcr.io/aatchison/features/idpbuilder
+          cacheFrom: ghcr.io/aatchison/devcontainer-ci/cache
           push: never
           runCmd: idpbuilder create
