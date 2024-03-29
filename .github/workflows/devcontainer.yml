@@ -11,4 +11,5 @@ jobs:
         with:
           imageName: ghcr.io/aatchison/features/idpbuilder
           cacheFrom: ghcr.io/aatchison/features/idpbuilder
-          push: always
+          push: never
+          runCmd: idpbuidler create
