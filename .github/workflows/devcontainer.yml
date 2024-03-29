@@ -9,8 +9,8 @@ jobs:
       - run: ls -al
       - uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/devcontainer-ci/example-devcontainer
-          cacheFrom: ghcr.io/devcontainer-ci/example-devcontainer
+          imageName: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
+          cacheFrom: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
           push: always
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
