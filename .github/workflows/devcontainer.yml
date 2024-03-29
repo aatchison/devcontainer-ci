@@ -5,6 +5,7 @@ jobs:
   ci-test:
     runs-on: ubuntu-latest
     steps:
+      - run: ls -al
       - uses: devcontainers/ci@v0.3
         with:
           # imageName: ghcr.io/example/example-devcontainer
