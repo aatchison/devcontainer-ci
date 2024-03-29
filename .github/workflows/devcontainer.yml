@@ -9,7 +9,11 @@ jobs:
       - run: ls -al
       - uses: devcontainers/ci@v0.3
         with:
-          runCmd: idpbuilder create
+          imageName: ghcr.io/devcontainer-ci/example-devcontainer
+          cacheFrom: ghcr.io/devcontainer-ci/example-devcontainer
+          push: always
       - uses: devcontainers/ci@v0.3
         with:
+          cacheFrom: ghcr.io/devcontainer-ci/example-devcontainer
+          push: never
           runCmd: idpbuilder create --package-dir ./examples/ack
