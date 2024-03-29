@@ -12,4 +12,4 @@ jobs:
           imageName: ghcr.io/aatchison/features/idpbuilder
           cacheFrom: ghcr.io/aatchison/features/idpbuilder
           push: never
-          runCmd: idpbuidler create
+          runCmd: idpbuilder create
