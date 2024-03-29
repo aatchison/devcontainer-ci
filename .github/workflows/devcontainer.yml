@@ -17,9 +17,5 @@ jobs:
           imageName: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
           cacheFrom: ghcr.io/aatchison/devcontainer-ci/example-devcontainer
           push: always
-      - uses: devcontainers/ci@v0.3
-        with:
-          cacheFrom: ghcr.io/devcontainer-ci/example-devcontainer
-          push: never
           runCmd: idpbuilder create --package-dir ./examples/ack
         
