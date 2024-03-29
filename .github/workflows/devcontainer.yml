@@ -9,6 +9,6 @@ jobs:
       - run: ls -al
       - uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/aatchison/features/idpbuilder:2.0.0
-          cacheFrom: ghcr.io/aatchison/features/idpbuilder:2.0.0
+          imageName: ghcr.io/aatchison/features/idpbuilder
+          cacheFrom: ghcr.io/aatchison/features/idpbuilder
           push: always
